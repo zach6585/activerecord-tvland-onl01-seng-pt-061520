@@ -4,6 +4,6 @@ class Show < ActiveRecord::Base
   def actors_list 
     actors = [] 
     self.characters.each do |char|
-      actors << act.name 
+      actors << char.actor.name 
   end 
 end
