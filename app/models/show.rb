@@ -10,6 +10,7 @@ class Show < ActiveRecord::Base
     actors
   end 
   def build_network(a)
-    Network.new(call_letters: self.network.call_letters)
+    a = Network.new(call_letters: self.network.call_letters)
+    self.network = a 
   end 
 end
