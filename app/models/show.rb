@@ -8,4 +8,5 @@ class Show < ActiveRecord::Base
     end 
     actors
   end 
+  self.build
 end
