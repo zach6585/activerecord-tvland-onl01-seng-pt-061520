@@ -10,5 +10,6 @@ class Show < ActiveRecord::Base
     actors
   end 
   def build_network
+    
   end 
 end
